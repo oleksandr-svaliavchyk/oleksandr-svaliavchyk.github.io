@@ -157,7 +157,7 @@ a {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	padding-bottom: 16px;
+	padding: 20px 16px;
 }
 
 .trend:after {
@@ -201,6 +201,7 @@ a {
 
 .trend-title-link {
 	color: #fff;
+	max-width: 340px;
 }
 
 /*================== M A I N =====================*/
