@@ -22,10 +22,19 @@ a {
 	color: black;
 }
 
+.visually-hidden {
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+}
+
 .page-content {
 	display: flex;
 	justify-content: center;
 }
+
+/* =========================== H E A D E R ==================================== */
 
 .header-container {
 	padding-top: 28px;
@@ -36,8 +45,6 @@ a {
 .header-logo {
 	width: 182px;
 }
-
-/* =========================== H E A D E R ==================================== */
 
 .page-header {
 	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
