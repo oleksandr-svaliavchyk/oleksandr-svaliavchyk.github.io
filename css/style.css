@@ -483,3 +483,57 @@ a {
 	font-size: 12px;
 	vertical-align: top;
 }
+
+
+/*================== F O O T E R =====================*/
+
+.page-footer{
+	width:1170px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.social-container{
+	display: flex;
+	justify-content: center;
+	background-color:#f4f7f6;
+}
+
+.social{
+	width: 20px;
+	height: 20px;
+	margin: 30px 30px 30px 0px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.icon1{
+	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+}
+.icon2{
+	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+}
+.icon3{
+	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg);
+}
+.icon4{
+	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
+}
+.icon5{
+	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+}
+
+.copyrights{
+	font-family: font-family: OpenSansBold;
+	display:flex;
+	font-size:12px;
+	margin-top:72px;
+	padding-bottom:40px;
+	justify-content:center;
+}
+
+.copyrights-link{
+	text-transform: none;
+	color:#999999;
+}
