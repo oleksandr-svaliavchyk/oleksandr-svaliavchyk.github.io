@@ -489,6 +489,91 @@ a {
 	vertical-align: top;
 }
 
+/*================== S H O P =====================*/
+
+.shop-title {
+	font-family: OpenSansBold;
+	text-align: center;
+	margin-top: 64px;
+	position: relative;
+	font-size: 20px;
+	line-height: 29.15px;
+
+}
+
+.shop-title:after {
+	content: "";
+	position: absolute;
+	top: 40px;
+	left: 67%;
+	width: 66px;
+	height: 4px;
+	margin-left: -19%;
+	background: #e1d9bd;
+}
+
+.products {
+	display: flex;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	margin: 0px auto;
+	margin-top: 40px;
+	margin-bottom: 93px;
+	position: relative;
+}
+
+.product-title {
+	margin-top: 25px;
+	margin-bottom: 17px;
+}
+
+.product-picture {
+	margin-bottom: 300px;
+
+}
+
+.product-text {
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.by-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 24px;
+	font-weight: bold;
+}
+
+.link {
+	font-weight: bold;
+}
+
+.product-info {
+	outline: 3px solid #8f7b4b;
+	outline-offset: 20px;
+	position: absolute;
+	top: 190px;
+	padding-bottom: 20px;
+	flex-grow: 1;
+	align-items: flex-end;
+}
+
+.new-price {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.discount {
+	text-decoration: line-through;
+	font-size: 14px;
+}
 
 /*================== F O O T E R =====================*/
 
