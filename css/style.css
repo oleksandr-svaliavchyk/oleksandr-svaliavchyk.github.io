@@ -121,6 +121,7 @@ a {
 
 .trends-title {
 	font-family: OpenSansBold;
+	font-size: 20px;
 	text-align: center;
 	margin-top: 64px;
 	position: relative;
@@ -158,6 +159,9 @@ a {
 	align-items: flex-end;
 	justify-content: center;
 	padding: 20px 16px;
+	
+	font-family: OpenSansBold;
+	font-size: 14px;
 }
 
 .trend:after {
@@ -197,11 +201,15 @@ a {
 
 .category li {
 	margin-right: 20px;
+	font-size: 14px;
 }
 
 .trend-title-link {
 	color: #fff;
 	max-width: 340px;
+	
+	font-family: OpenSansBold;
+	font-size: 20px;
 }
 
 /*================== M A I N =====================*/
@@ -491,21 +499,30 @@ a {
 
 /*================== S H O P =====================*/
 
-.shop-title {
-	font-family: OpenSansBold;
-	text-align: center;
-	margin-top: 64px;
-	position: relative;
-	font-size: 20px;
-	line-height: 29.15px;
-
+.shop {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.shop-title:after {
+h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.shop-title {
+	text-align: center;
+	margin-bottom: 45px;
+	position: relative;
+	font-family: OpenSansBold;
+	font-size: 20px;
+}
+
+.shop-title::after{
 	content: "";
 	position: absolute;
 	top: 40px;
-	left: 67%;
+	left: 66%;
 	width: 66px;
 	height: 4px;
 	margin-left: -19%;
@@ -514,82 +531,90 @@ a {
 
 .products {
 	display: flex;
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .product {
+	max-width: 300px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	max-width: 300px;
-	margin: 0px auto;
-	margin-top: 40px;
-	margin-bottom: 93px;
-	position: relative;
-}
-
-.product-title {
-	margin-top: 25px;
-	margin-bottom: 17px;
 }
 
 .product-picture {
-	margin-bottom: 300px;
-
+	max-width: inherit;
 }
 
-.product-text {
-	font-size: 15px;
-	line-height: 22px;
-}
-
-.by-container {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 24px;
-	font-weight: bold;
-}
-
-.link {
-	font-weight: bold;
+.product-picture-link {
+	max-width: inherit;
 }
 
 .product-info {
-	outline: 3px solid #8f7b4b;
-	outline-offset: 20px;
-	position: absolute;
-	top: 190px;
-	padding-bottom: 20px;
+	border: 3px solid #d3c59d;
+	margin-top: -30px;
+	margin-left: -20px;
+	padding: 55px 20px 20px;
+	width: 340px;
 	flex-grow: 1;
+}
+
+.product-title {
+	margin-bottom: 17px;
+	font-family: OpenSansBold;
+	font-size: 20px;
+}
+
+.product-text {
+	margin-bottom: 27px;
+	font-family: OpenSansRegular;
+	font-size: 15px;;
+}
+
+.product-text > a {
+	color: #b59f5b;
+	text-transform: none;
+}
+
+.product-buy-container  {
+	display: flex;
+	justify-content: space-between;
 	align-items: flex-end;
 }
 
-.new-price {
-	font-size: 20px;
-	line-height: 24px;
+.product-price-all {
+	text-decoration: line-through;
+	font-family: OpenSansBold;
+	font-size: 14px;
 }
 
-.discount {
-	text-decoration: line-through;
+.product-price-discount {
+	font-family: OpenSansBold;
+	font-size: 20px;
+}
+
+.product-button {
+	background-color:#b59f5b;
+	padding: 20px 30px;
+	color: #ffffff;
+	font-family: OpenSansBold;
 	font-size: 14px;
 }
 
 /*================== F O O T E R =====================*/
 
-.page-footer{
+.page-footer {
 	width:1170px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top: 65px;
 }
 
-.social-container{
+.social-container {
 	display: flex;
 	justify-content: center;
 	background-color:#f4f7f6;
 }
 
-.social{
+.social {
 	width: 20px;
 	height: 20px;
 	margin: 30px 30px 30px 0px;
@@ -598,23 +623,23 @@ a {
 	background-size: cover;
 }
 
-.icon1{
+.icon1 {
 	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
 }
-.icon2{
+.icon2 {
 	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
 }
-.icon3{
+.icon3 {
 	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg);
 }
-.icon4{
+.icon4 {
 	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
 }
-.icon5{
+.icon5 {
 	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
 }
 
-.copyrights{
+.copyrights {
 	font-family: font-family: OpenSansBold;
 	display:flex;
 	font-size:12px;
@@ -623,7 +648,7 @@ a {
 	justify-content:center;
 }
 
-.copyrights-link{
+.copyrights-link {
 	text-transform: none;
 	color:#999999;
 }
