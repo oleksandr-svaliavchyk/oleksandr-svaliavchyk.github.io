@@ -8,11 +8,11 @@
 	src: url(/fonts/OpenSans-Regular.woff);
 }
 
-@media  (min-width: 361px) and (max-width: 768px) {
+/* @media  (min-width: 361px) and (max-width: 768px) { */
 	html {
 		max-width: 100%;
 	}
-}
+/* } */
 
 * {
 	margin: 0px;
@@ -172,6 +172,56 @@ a {
 	}
 }
 
+/* ============ H E A D E R mobile =============== */
+
+@media (max-width: 360px) {
+	
+	.page-header {
+		width: 100%;
+	}
+
+	.header-container {
+		width: 100%;
+		padding: 0;
+	}
+
+	.top-container {
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 45px;
+	}
+
+	.menu > ul {
+		display: none;
+	}
+
+	.menu {
+		/* margin-left: auto; */
+		margin: 32px 17px 0 auto;
+		order: 1;
+	}
+
+	.burger-menu-img {
+		display: block;
+	}
+
+	.header-logo {
+		max-width: 269px;
+		width: 269px;
+		height: 50px;
+		padding-top: 185px;
+		order: 2;
+	}
+
+	.title-content {
+		font-size: 26px;
+		line-height: 36px;
+		margin-top: 45px;
+		padding-bottom: 218px;
+	}
+}
+
 /*================== T R E N D S =====================*/
 
 .trends-title {
@@ -302,6 +352,49 @@ a {
 		margin-bottom: 4px;
 	}
 
+
+}
+
+/* ============ T R E N D S mobil =============== */
+
+@media (max-width: 320px) {
+
+	.trends-title {
+		margin-top: 64px;
+	}
+	.trends-title:after {
+		left: 60%;
+	}
+	.trends-title-link {
+		font-size: 16px;;
+	}
+	.trends-posts-container {
+		display: block;
+	}
+	.trend {
+		width: 100%;
+		padding-right: 18px;
+		padding-left: 12px;
+		margin-bottom: 3px;
+	}
+	.trend:last-child {
+		margin-bottom: 0px;
+	}
+	.trend-content {
+		width: 100%;
+		padding: 33px 0 30px 22px;
+	}
+	ul.category {
+		line-height: 37.2px;
+		margin: 0px;
+	}
+	.category > li {
+		font-family: OpenSansBold;
+	}
+	.trend-title-link {
+		font-size: 16px;
+		line-height: 20px;
+	}
 
 }
 
@@ -449,6 +542,12 @@ a {
 		line-height: 22px;
 		margin-top: 38px;
 	}
+	
+}
+
+/* ============ M A I N mobil =============== */
+
+@media (max-width: 320px) {
 	
 }
 
@@ -739,7 +838,7 @@ h3 {
 }
 
 .product-picture {
-	max-width: inherit;
+	max-width: 100%;
 }
 
 .product-picture-link {
@@ -751,7 +850,7 @@ h3 {
 	margin-top: -30px;
 	margin-left: -20px;
 	padding: 55px 20px 20px;
-	width: 340px;
+	width: calc(100% + 40px);
 	flex-grow: 1;
 }
 
@@ -816,8 +915,22 @@ h3 {
 	}
 
 	.product {
-		width: 50%;
+		max-width: 50%;
+		width: calc(50% - 56px - 35px);
 		margin: 0 35px 28px;
+		box-sizing: border-box;
+	}
+
+	.product:nth-child(2n-1){
+		margin-left: 56px;
+	}
+
+	.product:nth-child(2n){
+		margin-right: 56px;
+	}
+
+	.product-title {
+		margin: 0;
 	}
 
 	.product-title-link {
@@ -832,7 +945,7 @@ h3 {
 
 }
 
-/*================== F O O T E R =====================*/
+/*============== F O O T E R tablet ==============*/
 
 /*================== F O O T E R =====================*/
 
@@ -866,4 +979,25 @@ h3 {
 .copyrights-link {
 	text-transform: none;
 	color:#999999;
+}
+
+
+/*============== F O O T E R tablet ==============*/
+
+
+@media  (min-width: 361px) and (max-width: 768px) {
+	
+	.page-footer {
+		margin: 22px 0px 0px;
+		width: 100%;
+	}	
+
+	.social-container {
+		margin: 0 35px;
+	}
+
+	.copyrights {
+		margin-top: 50px;
+	}
+
 }
