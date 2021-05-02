@@ -105,11 +105,11 @@
 .radio-btn:checked + .radio-btn-text::before {
 	background-image: url(/svg/form-circle.svg);
 }
-.label-text-yes {
-	margin-left: 20px;
+.radio-group {
+	margin-left: 16px;
 }
-.label-text-no {
-	margin-left: 40px;
+.radio-group:first-child {
+	margin-left: 0;
 }
 .popup-info {
 	margin-top: 34px;
