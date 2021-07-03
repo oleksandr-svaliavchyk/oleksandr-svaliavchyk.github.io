@@ -20,7 +20,7 @@
 				<a href="#0" class="popup-title-link">Ваш фидбек</a>
 			</h2>
 			<section class="attendance">
-				<p class="p-text">Как часто вы заходите на сайт?</p>
+				<div class="p-text">Как часто вы заходите на сайт?</div>
 				<select class="select-attendance">
 					<option value="1">Почти каждый день</option>
 					<option value="2">Раз в несколько дней</option>
@@ -29,7 +29,7 @@
 					<select>
 			</section>
 			<section class="popup-mail">
-				<p class="p-text">Вы подписаны на e-mail рассылку?</p>
+				<div class="p-text">Вы подписаны на e-mail рассылку?</div>>
 				<div class="buttons-mail">
 					<label class="radio-group">
 						<input type="radio" class="radio-btn" name="mail">
@@ -42,7 +42,7 @@
 				</div>
 			</section>
 			<section class=" popup-info">
-				<p class="p-text">Расскажите, какой контент вы бы хотели видеть на нашем сайте ?</p>
+				<div class="p-text">Расскажите, какой контент вы бы хотели видеть на нашем сайте ?</div>
 				<textarea class="input-info" placeholder="Может, больше рецептов?"></textarea>
 			</section>
 			<button type="submit" class="button-submit">
@@ -86,12 +86,12 @@
 				</a>
 				<nav class="menu">
 					<ul class="menu-items">
-						<li><a href="#0">Главная</a></li>
-						<li><a href="#0">Посты</a></li>
-						<li><a href="#0">Статьи</a></li>
-						<li><a href="#0">Теги</a></li>
-						<li><a href="#0">Темы</a></li>
-						<li><a href="#0">Контакты</a></li>
+						<li class="menu-item"><a class="menu-item-link" href="#0">Главная</a></li>
+						<li class="menu-item"><a class="menu-item-link" href="#0">Посты</a></li>
+						<li class="menu-item"><a class="menu-item-link" href="#0">Статьи</a></li>
+						<li class="menu-item"><a class="menu-item-link" href="#0">Теги</a></li>
+						<li class="menu-item"><a class="menu-item-link" href="#0">Темы</a></li>
+						<li class="menu-item"><a class="menu-item-link" href="#0">Контакты</a></li>
 					</ul>
 					<div class="burger-menu">
 						<a href="#0" class="burger-menu-img"></a>
@@ -113,6 +113,7 @@
 		</h2>
 		<div class="trends-posts-container">
 			<article class="trend trend1">
+				<!-- <img class="trend-img" src="/img/trend1.jpg" alt="Цветы в горшках"> -->
 				<div class="trend-content">
 					<ul class="category">
 						<li>lifestyle</li>
@@ -168,15 +169,17 @@
 					<div class="post-content">
 						<div class="post-header">
 							<ul class="category">
-								<li><a href="#0">travel</a></li>
-								<li><a href="#0">health</a></li>
+								<li><a class="category-link" href="#0">travel</a></li>
+								<li><a class="category-link" href="#0">health</a></li>
 							</ul>
 							<h3 class="post-title">
 								<a href="#0" class="post-link"> 10 мест, ради которых стоит проснуться на рассвете</a>
 							</h3>
 							<div class="date-author">
 								<time class="post-date" datatime="2019-06-10">10 июня 2019</time>
-								<a href="#0" class="post-author"> <span class="author-name">Неизвестный автор</span> </a>
+								<a href="#0" class="post-author">
+									<div class="author-name">Неизвестный автор</div>
+								</a>
 							</div>
 						</div>
 						<div class="post-text">
@@ -193,15 +196,17 @@
 					<div class="post-content">
 						<div class="post-header">
 							<ul class="category">
-								<li><a href="#0">health</a></li>
-								<li><a href="#0">lifestyle</a></li>
+								<li><a class="category-link" href="#0">health</a></li>
+								<li><a class="category-link" href="#0">lifestyle</a></li>
 							</ul>
 							<h3 class="post-title">
 								<a href="#0" class="post-link"> Йога для начинающих в домашних условиях</a>
 							</h3>
 							<div class="date-author">
 								<time class="post-date" datatime="2019-06-10">10 июня 2019</time>
-								<a href="#0" class="post-author"> <span class="author-name">Неизвестный автор</span> </a>
+								<a href="#0" class="post-author">
+									<div class="author-name">Неизвестный автор</div>
+								</a>
 							</div>
 						</div>
 						<div class="post-text">
@@ -212,18 +217,22 @@
 				</article>
 
 				<article class="post">
-					<img src="/img/last-post3.jpg" class="post-image" alt="Девушка в толпе слушает музыку на концерте">
+					<div class="img-conrainer">
+						<img src="/img/last-post3.jpg" class="post-image" alt="Девушка в толпе слушает музыку на концерте">
+					</div>
 					<div class="post-content">
 						<div class="post-header">
 							<ul class="category">
-								<li><a href="#0">music</a></li>
+								<li><a class="category-link" href="#0">music</a></li>
 							</ul>
 							<h3 class="post-title">
 								<a href="#0" class="post-link"> Лучшие музыкальные фестивали этого лета </a>
 							</h3>
 							<div class="date-author">
 								<time class="post-date" datatime="2019-06-10">10 июня 2019</time>
-								<a href="#0" class="post-author"> <span class="author-name">Неизвестный автор</span> </a>
+								<a href="#0" class="post-author">
+									<div class="author-name">Неизвестный автор</div>
+								</a>
 							</div>
 						</div>
 						<div class="post-text">
@@ -241,15 +250,17 @@
 					<div class="post-content">
 						<div class="post-header">
 							<ul class="category">
-								<li><a href="#0">lifestyle</a></li>
-								<li><a href="#0">food</a></li>
+								<li><a class="category-link" href="#0">lifestyle</a></li>
+								<li><a class="category-link" href="#0">food</a></li>
 							</ul>
 							<h3 class="post-title">
 								<a href="#0" class="post-link"> Наукоёмкий подход к кулинарии</a>
 							</h3>
 							<div class="date-author">
 								<time class="post-date" datatime="2019-06-10">10 июня 2019</time>
-								<a href="#0" class="post-author"> <span class="author-name">Неизвестный автор</span> </a>
+								<a href="#0" class="post-author">
+									<siv class="author-name">Неизвестный автор</siv>
+								</a>
 							</div>
 						</div>
 						<div class="post-text">
@@ -266,16 +277,18 @@
 					<div class="post-content">
 						<div class="post-header">
 							<ul class="category">
-								<li><a href="#0">lifestyle</a></li>
-								<li><a href="#0">interior</a></li>
-								<li><a href="#0">art</a></li>
+								<li><a class="category-link" href="#0">lifestyle</a></li>
+								<li><a class="category-link" href="#0">interior</a></li>
+								<li><a class="category-link" href="#0">art</a></li>
 							</ul>
 							<h3 class="post-title">
 								<a href="#0" class="post-link"> делаем модные принты на подушках для интерьера</a>
 							</h3>
 							<div class="date-author">
 								<time class="post-date" datatime="2019-06-10">10 июня 2019</time>
-								<a href="#0" class="post-author"> <span class="author-name">Неизвестный автор</span> </a>
+								<a href="#0" class="post-author">
+									<div class="author-name">Неизвестный автор</div>
+								</a>
 							</div>
 						</div>
 						<div class="post-text">
@@ -357,7 +370,7 @@
 						<label class="hidden-info">
 							<span class="visually-hidden">Кнопка поиска</span>
 						</label>
-						<button type:"submit" class="button-field">
+						<button type="submit" class="button-field">
 							<svg class="svg-search" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 512 512">
 								<g clip-path="url(#clip0)">
 									<path fill="#fff" stroke="#B59F5B"
@@ -384,19 +397,19 @@
 					<button type:"submit" class="button-email">Подписаться</button>
 				</form>
 
-				<section class="tegs">
-					<h3 class="tegs-title">
-						<a href="#0" class="tegs-title-link">Теги</a>
+				<section class="tags">
+					<h3 class="tags-title">
+						<a href="#0" class="tags-title-link">Теги</a>
 					</h3>
-					<ul class="tegs-list">
-						<li class="teg"><a href="#0">fashion</a></li>
-						<li class="teg"><a href="#0">music</a></li>
-						<li class="teg"><a href="#0">lifestyle</a></li>
-						<li class="teg"><a href="#0">art</a></li>
-						<li class="teg"><a href="#0">interiror</a></li>
-						<li class="teg"><a href="#0">travel</a></li>
-						<li class="teg"><a href="#0">food</a></li>
-						<li class="teg"><a href="#0">health</a></li>
+					<ul class="tags-list">
+						<li class="tag"><a href="#0">fashion</a></li>
+						<li class="tag"><a href="#0">music</a></li>
+						<li class="tag"><a href="#0">lifestyle</a></li>
+						<li class="tag"><a href="#0">art</a></li>
+						<li class="tag"><a href="#0">interiror</a></li>
+						<li class="tag"><a href="#0">travel</a></li>
+						<li class="tag"><a href="#0">food</a></li>
+						<li class="tag"><a href="#0">health</a></li>
 					</ul>
 				</section>
 				<section class="topics">
@@ -412,7 +425,7 @@
 						<li class="topic"><a href="#0">Йога <span class="num-topic">8</span></a></li>
 					</ul>
 				</section>
-
+			</section>
 		</aside>
 	</div>
 
@@ -430,15 +443,15 @@
 					<h3 class="product-title">
 						<a href="#0" class="product-title-link">Подушки на диван</a>
 					</h3>
-					<p class="product-text">Набор из двух подушек с модными принтами. Видео о создании
+					<div class="product-text">Набор из двух подушек с модными принтами. Видео о создании
 						<a href="#0" id="here">здесь</a>
-					</p>
+					</div>
 					<div class="product-buy-container">
 						<div class="price-container">
-							<p class="product-price-all">
+							<div class="product-price-all">
 								1000 ₽
-							</p>
-							<p class="product-price-discount">800 ₽</p>
+							</div>
+							<div class="product-price-discount">800 ₽</div>
 						</div>
 						<a href="#0" class="product-button">В Магазин</a>
 					</div>
@@ -453,12 +466,12 @@
 					<h3 class="product-title">
 						<a href="#0" class="product-title-link">Кукла "Зайчик"</a>
 					</h3>
-					<p class="product-text">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена
+					<div class="product-text">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена
 						<a href="#0">весенняя сесия постов</a> в блоге и несколько подкастов
-					</p>
+					</div>
 					<div class="product-buy-container">
 						<div class="price-container">
-							<p class="product-price-discount">3500 ₽</p>
+							<div class="product-price-discount">3500 ₽</div>
 						</div>
 						<a href="#0" class="product-button">В Магазин</a>
 					</div>
@@ -473,15 +486,15 @@
 					<h3 class="product-title">
 						<a href="#0" class="product-title-link">Шестиугольная рамка</a>
 					</h3>
-					<p class="product-text">Необычная рамка для украшения дома из видео
+					<div class="product-text">Необычная рамка для украшения дома из видео
 						<a href="#0">"Как сделать рамку из подручных средств за 30 минут"</a>
-					</p>
+					</div>
 					<div class="product-buy-container">
 						<div class="price-container">
-							<p class="product-price-all">
+							<div class="product-price-all">
 								500 ₽
-							</p>
-							<p class="product-price-discount">400 ₽</p>
+							</div>
+							<div class="product-price-discount">400 ₽</div>
 						</div>
 						<a href="#0" class="product-button">В Магазин</a>
 					</div>
