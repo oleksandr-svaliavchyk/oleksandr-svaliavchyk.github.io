@@ -918,6 +918,7 @@ h3 {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		background-color: inherit;
 	}
 
 	.category-link {
@@ -931,8 +932,16 @@ h3 {
 	}
 
 	.trend {
-		width: calc((100% - 4px) / 2);
-		margin-left: 4px;
+		width: 50%;
+	}
+
+	.trend:nth-child(even)::after {
+		left: 4px;
+	}
+
+	.trend:nth-child(even) {
+		padding-left: 4px;
+		background-color: inherit;
 	}
 
 	.trend:nth-child(3) {
