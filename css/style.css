@@ -12,13 +12,14 @@
 	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 2;
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	display: none;
 }
 
 .popup {
 	position: fixed;
-	top: calc(100% / 2 - 590px / 2);
-	left: calc(100% / 2 - 390px / 2);
 	padding: 50px 30px;
 	background-color: #ffffff;
 	z-index: 2;
@@ -42,12 +43,10 @@
 }
 .popup-title:after {
 	content: "";
-	position: absolute;
-	top: 89px;
-	left: 236px;
+	display: block;
+	margin: 13px auto 0;
 	width: 66px;
 	height: 4px;
-	margin-left: -19%;
 	background: #e1d9bd;
 }
 .popup-title-link {
@@ -293,9 +292,8 @@ span {
 
 .trends-title:after {
 	content: "";
-	position: absolute;
-	top: 125%;
-	left: 40%;
+	display: block;
+	margin: 13px auto 0;
 	width: 66px;
 	height: 4px;
 	background: #e1d9bd;
@@ -336,6 +334,10 @@ span {
 .trend-img {
 	width: 100%;
 	height: 100%;
+}
+
+.trend:first-child {
+	margin-left: 0px;
 }
 
 .trend-container {
@@ -399,7 +401,7 @@ ul.category {
 	margin-bottom: 0;
 }
 
-.img-conrainer {
+.img-container {
 	width: 100%;
 }
 
@@ -490,9 +492,8 @@ ul.category {
 
 .aside-title:after {
 	content: "";
-	position: absolute;
-	top: 35px;
-	left: 37%;
+	display: block;
+	margin: 13px auto 0;
 	width: 66px;
 	height: 4px;
 	background: #e1d9bd;
@@ -533,11 +534,13 @@ ul.category {
 .field {
 	box-sizing: border-box;
 	font-size: 13px;
-	width: calc(100% - 48px);
+	width: 100%;
 	height: 47px;
 	border: none;
 	background-color: #f4f7f6;
 	padding-left: 20px;
+
+	display: flex;
 }
 
 .field-container {
@@ -549,6 +552,7 @@ ul.category {
 	width: 48px;
 	background-color: #b59f5b;
 	border: none;
+	flex-shrink: 0;
 }
 
 .svg-search {
@@ -568,9 +572,8 @@ ul.category {
 
 .mailing-title-link:after {
 	content: "";
-	position: absolute;
-	top: 35px;
-	left: 37%;
+	display: block;
+	margin: 13px auto 0;
 	width: 66px;
 	height: 4px;
 	background: #e1d9bd;
@@ -610,11 +613,10 @@ ul.category {
 	position: relative;
 }
 
-.tags:after {
+.tags-title:after {
 	content: "";
-	position: absolute;
-	top: 35px;
-	left: 37%;
+	display: block;
+	margin: 13px auto 0;
 	width: 66px;
 	height: 4px;
 	background: #e1d9bd;
@@ -656,11 +658,10 @@ ul.category {
 	margin-bottom: 48px;
 }
 
-.topics:after {
+.topics-title:after {
 	content: "";
-	position: absolute;
-	top: 35px;
-	left: 40%;
+	display: block;
+	margin: 13px auto 0;
 	width: 66px;
 	height: 4px;
 	background: #e1d9bd;
@@ -715,9 +716,8 @@ h3 {
 
 .shop-title::after {
 	content: "";
-	position: absolute;
-	top: 40px;
-	left: 40%;
+	display: block;
+	margin: 13px auto 0;
 	width: 66px;
 	height: 4px;
 	background: #e1d9bd;
@@ -760,7 +760,7 @@ h3 {
 	margin-top: -30px;
 	margin-left: -20px;
 	padding: 55px 20px 20px;
-	width: calc(100% + 40px);
+	width: 340px;
 	flex-grow: 1;
 }
 
@@ -907,6 +907,7 @@ h3 {
 		font-size: 40px;
 		line-height: 55px;
 	}
+
 	.trend-title-link {
 		font-size: 18;
 		line-height: 29px;
@@ -929,13 +930,13 @@ h3 {
 		line-height: 22px;
 	}
 
-	.trends-title:after {
-		left: 45%;
-	}
-
 	.trend {
 		width: calc((100% - 4px) / 2);
-		margin-bottom: 4px;
+		margin-left: 4px;
+	}
+
+	.trend:nth-child(3) {
+		margin-left: 0;
 	}
 
 	.page-content {
@@ -944,7 +945,7 @@ h3 {
 	}
 
 	.main-content {
-		width: calc(100% - 340px - 35px);
+		width: 805px;
 		margin: 0 35px;
 	}
 
@@ -959,7 +960,7 @@ h3 {
 		display: none;
 	}
 
-	.img-conrainer {
+	.img-container {
 		width: 100%;
 	}
 
@@ -1021,18 +1022,12 @@ h3 {
 		line-height: 29px;
 	}
 
-	.shop-title::after {
-		left: 45%;
-	}
-
 	.products {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	.product {
-		max-width: 50%;
-		width: calc(50% - 56px - 35px);
 		margin: 0 35px 28px;
 		box-sizing: border-box;
 	}
@@ -1149,8 +1144,17 @@ h3 {
 		width: 680px;
 	}
 
+	.trends-posts-container {
+		flex-wrap: nowrap;
+	}
+
 	.trend {
-		width: 24.8%;
+		width: 100%;
+		margin-left: 4px;
+	}
+
+	.trend:nth-child(3) {
+		margin-left: 4px;
 	}
 
 	.trend-content {
@@ -1159,10 +1163,6 @@ h3 {
 
 	.trend-title-link {
 		font-size: 20px;
-	}
-
-	.trends-title:after {
-		left: 47%;
 	}
 
 	.page-content {
@@ -1175,7 +1175,7 @@ h3 {
 		flex-direction: row;
 	}
 
-	.img-conrainer {
+	.img-container {
 		box-sizing: border-box;
 		width: 380px;
 	}
@@ -1217,17 +1217,14 @@ h3 {
 		margin-top: -30px;
 		margin-left: -20px;
 		padding: 55px 20px 20px;
-		width: calc(100% + 40px);
+		max-width: 340px;
 		flex-grow: 1;
+		flex-shrink: 1;
 	}
 
 	.page-footer {
 		max-width: 1200px;
 		margin: 64px auto 0;
 		padding: 0;
-	}
-
-	.shop-title::after {
-		left: 47%;
 	}
 }
